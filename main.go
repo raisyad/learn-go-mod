@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/google/uuid"
 )
 
@@ -21,6 +22,22 @@ func main() {
 
 	i := []int{1, 2, 3, 4, 5}
 	for index, value := range i {
+		fmt.Println("The index and value are: ", index, value)
+	}
+
+	as := [...]string{
+		"raisyad",
+		"syad",
+		"jull",
+	}
+
+	fmt.Println(as)
+
+	for i, v := range as {
+		fmt.Println("The index and value are: ", i, v)
+	}
+
+	for index, value := range as {
 		fmt.Println("The index and value are: ", index, value)
 	}
 }
